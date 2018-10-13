@@ -1,0 +1,8 @@
+{
+  "short_name": "web-component-quote",
+  "name": "web-component-quote",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
