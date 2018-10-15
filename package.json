@@ -1,6 +1,6 @@
 {
   "name": "web-component-quote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mediatheek web component for displaying quotes",
   "author": "ahs-mediatheken",
   "license": "MIT",
@@ -12,13 +12,21 @@
     "test": "CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
+    "patch": "yarn version --patch && genversion --es6 --semi src/version.js",
+    "commit": "yarn run patch && git add . && git commit && git push",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10",
+    "semantic-ui-react": "^0.81.1"
+  },
   "peerDependencies": {
+    "med-class": "git+https://github.com/ahs-mediatheken/med-class.git",
+    "med-react-component": "git+https://github.com/ahs-mediatheken/med-react-component.git",
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^15.0.0 || ^16.0.0"
@@ -40,7 +48,8 @@
     "rollup-plugin-node-resolve": "^3.0.2",
     "rollup-plugin-peer-deps-external": "^2.0.0",
     "rollup-plugin-postcss": "^1.1.0",
-    "rollup-plugin-url": "^1.3.0"
+    "rollup-plugin-url": "^1.3.0",
+    "typescript": "^2.9.1"
   },
   "files": [
     "dist"
