@@ -5,15 +5,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height:99vh;
+    height:98vh;
     text-align: center;
     border: 2px;
     border-style: solid;
 }
 .quote {
-    margin: 50px;
+    margin: 10px;
     font-size: 1.5em;
     position: relative;
+    overflow: hidden;
 }
 
 .quotesign-left{

@@ -69,7 +69,7 @@ export class WebComponentQuote extends Component {
            return '1.5em'
 
        const length = Math.max(quote.quote.length, 50)
-       const f1 = 24
+       const f1 = 30
        const f2 = 17
        const opp = 36120
        const fs = opp / (length * f1) + (length/f2)
