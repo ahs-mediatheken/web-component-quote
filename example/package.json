@@ -1,15 +1,16 @@
 {
   "name": "web-component-quote-example",
-  "homepage": "https://ahs-mediatheken.github.io/web-component-quote",
+  "homepage": ".",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
   "dependencies": {
+    "med-class": "git+https://github.com/ahs-mediatheken/med-class.git",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "web-component-quote": "link:..",
-    "react-scripts": "^1.1.1"
+    "react-scripts": "^1.1.1",
+    "web-component-quote": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

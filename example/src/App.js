@@ -1,13 +1,10 @@
-import React, { Component } from 'react'
-
-import ExampleComponent from 'web-component-quote'
+import React, {Component} from 'react'
+import {WebComponentQuote} from 'web-component-quote'
 
 export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
-  }
+    render() {
+        return (
+            <WebComponentQuote/>
+        )
+    }
 }

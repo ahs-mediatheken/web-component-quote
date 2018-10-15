@@ -20,6 +20,10 @@ export default {
     }
   ],
   plugins: [
+      resolve({
+          browser: true,
+          preferBuiltins:true //without this it fails
+      }),
     external(),
     postcss({
       modules: true
